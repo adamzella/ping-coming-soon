@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Libre Franklin", sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    padding: 30px;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0px;
+}
+
+h1 span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+    
+}
+
+.sub{
+    font-size:  .95rem;
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 30px;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid  hsl(223, 100%, 88%);
+    border-radius: 50px;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+}
+
+form input::placeholder{
+    color: hsl(223, 100%, 88%);
+    font-size: 1rem;
+    
+}
+
+form button{
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 15px;
+    color: #fff;
+    font: 1rem;
+    box-shadow: 0px 5px 3px hsla(223, 87%,63%, 0.30);
+}
+
+form button:hover{
+    cursor: pointer; 
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.list li {
+    margin: 10px;
+}
+
+.list li a{
+    border:1px solid hsl(0, 7%,83%);
+    border-radius: 50%; 
+    color: hsl(223, 87%, 63%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+}
+.list li a:hover{
+    border: 1px solid hsl(223, 87%, 63%);
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+footer p{
+    color: hsl(0, 0%, 59%);
+    margin-top: 7px;
+}
+
+@media only screen and (min-width: 768px){
+    form{
+        flex-direction: row;
+        max-width: 700px;
+        margin-bottom: 50px;
+    }
+    
+    form button{
+        width: 40%;
+        margin: 0;
+        margin-left: 20px;
+    }
+    
+    form input{
+        margin-bottom: 0;
+    }
+}
